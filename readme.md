@@ -46,7 +46,7 @@ export default () => (
 | topbarTitle | `string`  | title of the topbar                                       |
 | barHeight   | `string`  | height of the topbar                                      |
 | divider     | `string`  | css border values of topbar border-bottom                 |
-| padding     | `string`  | css padding of content widow                              |
+| padding     | `string`  | css padding of content window (singular value, e.g., `.5em`) |
 | topbarColor | `string`  | color of topbar                                           |
 | background  | `string`  | color of main content window                              |
 | border      | `string`  | css border values of outer border                         |
