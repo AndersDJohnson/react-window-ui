@@ -12,7 +12,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  border: ", ";\n  background: ", ";\n  color: white;\n  padding-top: calc(", " + ", ");\n  ", " &:after {\n    top: 0.5rem;\n    left: 0.6rem;\n    ", ";\n  }\n  &:before {\n    height: ", ";\n    line-height: ", ";\n    border-bottom: ", ";\n    background: ", ";\n    color: #444;\n    ", ";\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  border: ", ";\n  background: ", ";\n  color: white;\n  padding-top: calc(", " + ", ");\n  ", " &:after {\n    top: 0.5rem;\n    left: 0.6rem;\n    ", ";\n  }\n  &:before {\n    height: ", ";\n    line-height: ", ";\n    border-bottom: ", ";\n    background: ", ";\n    color: ", ";\n    ", ";\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -22,7 +22,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  border: ", ";\n  background: ", ";\n  color: white;\n  padding-top: calc(", " + ", ");\n  ", " &:after {\n    top: 0.8rem;\n    left: 0.8rem;\n    ", ";\n  }\n  &:before {\n    height: ", ";\n    line-height: ", ";\n    background: ", ";\n    border-bottom: ", ";\n    background: ", ";\n    color: #ccc;\n    ", ";\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  border: ", ";\n  background: ", ";\n  color: white;\n  padding-top: calc(", " + ", ");\n  ", " &:after {\n    top: 0.8rem;\n    left: 0.8rem;\n    ", ";\n  }\n  &:before {\n    height: ", ";\n    line-height: ", ";\n    background: ", ";\n    border-bottom: ", ";\n    background: ", ";\n    color: ", ";\n    ", ";\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -32,7 +32,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  border: ", ";\n  background: ", ";\n  padding-top: calc(", " + ", ");\n  ", " &:after {\n    top: 0.8rem;\n    left: 0.8rem;\n    ", ";\n  }\n  &:before {\n    height: ", ";\n    line-height: ", ";\n    border-bottom: ", ";\n    background: ", ";\n    color: #444;\n    ", ";\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  border: ", ";\n  background: ", ";\n  padding-top: calc(", " + ", ");\n  ", " &:after {\n    top: 0.8rem;\n    left: 0.8rem;\n    ", ";\n  }\n  &:before {\n    height: ", ";\n    line-height: ", ";\n    border-bottom: ", ";\n    background: ", ";\n    color: ", ";\n    ", ";\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -75,6 +75,8 @@ var Browser = _styledComponents["default"].div(_templateObject(), function (prop
   return props.divider || '0.05rem solid #ccc';
 }, function (props) {
   return props.topbarColor || '#E6E6E6';
+}, function (props) {
+  return props.topbarTitleColor || '#444';
 }, before);
 
 exports.Browser = Browser;
@@ -97,6 +99,8 @@ var Terminal = _styledComponents["default"].section(_templateObject2(), function
   return props.divider || '0.05rem solid #000';
 }, function (props) {
   return props.topbarColor || '#000';
+}, function (props) {
+  return props.topbarTitleColor || '#CCC';
 }, before);
 
 exports.Terminal = Terminal;
@@ -117,6 +121,8 @@ var MacTerminal = _styledComponents["default"].section(_templateObject3(), funct
   return props.divider || '0.05rem solid #1D1F21';
 }, function (props) {
   return props.topbarColor || '#E6E6E6';
+}, function (props) {
+  return props.topbarTitleColor || '#444';
 }, before);
 
 exports.MacTerminal = MacTerminal;
